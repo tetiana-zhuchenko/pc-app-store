@@ -1,0 +1,73 @@
+:root {
+  --bg-primary: #fbfbfb;
+  --bg-secondary: #f3f5f6;
+  --bg-header-footer: #000000;
+  --btn-bg: linear-gradient(
+    0deg,
+    #130999 -0.01%,
+    #174d8f 35.01%,
+    #1a7f87 64.91%,
+    #1c9e83 87.44%,
+    #1daa81 99.99%
+  );
+  --btn-hover: #31a38c;
+  --btn-active: #130999;
+
+  --font-color-primary: #212121;
+  --font-color-secondary: #ffffff;
+  --font-color-error: rgb(153, 1, 1);
+
+  --complimentary-yellow: #ffb800;
+  --complimentary-blue: #3683f7;
+
+  --font-primary-bebas-neue: 'Bebas Neue', sans-serif;
+  --font-secondary-roboto: 'Roboto', sans-serif;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin-block-start: 0;
+  margin-block-end: 0;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+html,
+body {
+  font-size: 62.7%;
+  height: 100dvh;
+}
+
+body {
+  text-rendering: optimizeSpeed;
+  color: var(--font-color-primary);
+  background: var(--bg-primary);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.general-wrapper {
+  margin: auto;
+  max-width: 113.9rem;
+  width: 100%;
+}
+
+@media only screen and (max-width: 625px) {
+  html,
+  body {
+    font-size: 52.7%;
+  }
+}
+
+@media only screen and (max-width: 380px) {
+  html,
+  body {
+    font-size: 46.7%;
+  }
+}
